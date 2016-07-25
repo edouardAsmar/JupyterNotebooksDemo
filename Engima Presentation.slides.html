@@ -11845,7 +11845,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
@@ -11870,7 +11870,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">rawdata</span> <span class="o">=</span> <span class="p">[]</span>
@@ -11900,7 +11900,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">rawdata</span><span class="p">)</span>
@@ -11916,13 +11916,17 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="The-Data-Frame:">The Data Frame:<a class="anchor-link" href="#The-Data-Frame:">&#182;</a></h3>
+<h3 id="The-Data-Frame:">The Data Frame:<a class="anchor-link" href="#The-Data-Frame:">&#182;</a></h3><ul>
+<li>In SQL:
+  <code>use df; select top * from df;</code> </li>
+</ul>
+
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span>
@@ -11936,7 +11940,7 @@ a.anchor-link {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -13207,7 +13211,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -13221,7 +13225,7 @@ a.anchor-link {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[5]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -13262,7 +13266,7 @@ dtype: object</pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13276,7 +13280,7 @@ dtype: object</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[6]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -13417,7 +13421,7 @@ dtype: object</pre>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
@@ -13431,7 +13435,7 @@ dtype: object</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -13585,7 +13589,7 @@ dtype: object</pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;newUsers&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
@@ -13599,7 +13603,7 @@ dtype: object</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -13764,7 +13768,7 @@ dtype: object</pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;entrances&#39;</span><span class="p">,</span><span class="s1">&#39;bounces&#39;</span><span class="p">,</span><span class="s1">&#39;newUsers&#39;</span><span class="p">,</span><span class="s1">&#39;daysSinceLastSession&#39;</span><span class="p">,</span><span class="s1">&#39;pageLoadTime&#39;</span><span class="p">,</span> <span class="s1">&#39;pageviews&#39;</span><span class="p">,</span> <span class="s1">&#39;timeOnPage&#39;</span><span class="p">,</span><span class="s1">&#39;sessionDurationBucket&#39;</span><span class="p">,</span> <span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;sessionCount&#39;</span><span class="p">,</span> <span class="s1">&#39;sessions&#39;</span><span class="p">,</span> <span class="s1">&#39;sessionsPerUser&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;entrances&#39;</span><span class="p">,</span><span class="s1">&#39;bounces&#39;</span><span class="p">,</span><span class="s1">&#39;newUsers&#39;</span><span class="p">,</span><span class="s1">&#39;daysSinceLastSession&#39;</span><span class="p">,</span><span class="s1">&#39;pageLoadTime&#39;</span><span class="p">,</span> <span class="s1">&#39;pageviews&#39;</span><span class="p">,</span> <span class="s1">&#39;timeOnPage&#39;</span><span class="p">,</span><span class="s1">&#39;sessionDurationBucket&#39;</span><span class="p">,</span> <span class="s1">&#39;users&#39;</span><span class="p">,</span><span class="s1">&#39;sessionCount&#39;</span><span class="p">,</span> <span class="s1">&#39;sessions&#39;</span><span class="p">,</span> <span class="s1">&#39;sessionsPerUser&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
@@ -13777,7 +13781,7 @@ dtype: object</pre>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
@@ -13791,7 +13795,7 @@ dtype: object</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -13828,6 +13832,8 @@ dtype: object</pre>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Creating-sub-tables-out-of-results">Creating sub-tables out of results<a class="anchor-link" href="#Creating-sub-tables-out-of-results">&#182;</a></h2><ul>
 <li>Simply assign the results to a new variable</li>
+<li>In SQL:
+  <code>select a.exitPagePath as exit, sum(a.entrances) as entrances from df as a group by exit</code></li>
 </ul>
 
 </div>
@@ -13835,7 +13841,7 @@ dtype: object</pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">entrancesAndExits</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;exitPagePath&#39;</span><span class="p">,</span> <span class="s1">&#39;entrances&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;exitPagePath&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -13850,7 +13856,7 @@ dtype: object</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[36]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -13958,7 +13964,7 @@ dtype: object</pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -13971,7 +13977,7 @@ dtype: object</pre>
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">entrancesAndPages</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;exitPagePath&#39;</span><span class="p">,</span> <span class="s1">&#39;entrances&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;exitPagePath&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
@@ -13986,11 +13992,11 @@ dtype: object</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[41]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x119d27f10&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11500c290&gt;</pre>
 </div>
 
 </div>
@@ -14385,7 +14391,7 @@ RMQQkYIeETFEpKBHRAwRKegREUNECnpExBDxHzFoFj3AP9q9AAAAAElFTkSuQmCC
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">pageViewsAndPages</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;pagePath&#39;</span><span class="p">,</span> <span class="s1">&#39;pageviews&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;pagePath&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -14400,11 +14406,11 @@ RMQQkYIeETFEpKBHRAwRKegREUNECnpExBDxHzFoFj3AP9q9AAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[40]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[16]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x119962e90&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x117813e10&gt;</pre>
 </div>
 
 </div>
@@ -14897,7 +14903,7 @@ RU5ErkJggg==
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">rawdata</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14914,7 +14920,7 @@ RU5ErkJggg==
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">rawdata</span><span class="p">)</span>
@@ -14927,7 +14933,7 @@ RU5ErkJggg==
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df2</span>
@@ -14941,7 +14947,7 @@ RU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[19]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -16033,7 +16039,7 @@ RU5ErkJggg==
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">usersPerCity</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[[</span><span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;region&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;region&#39;</span><span class="p">,</span> <span class="s1">&#39;city&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;users&#39;</span><span class="p">)</span>
@@ -16048,7 +16054,7 @@ RU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[27]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[22]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -16115,7 +16121,7 @@ RU5ErkJggg==
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#Top 5 region and city combinations</span>
@@ -16130,11 +16136,11 @@ RU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[23]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1186cda10&gt;], dtype=object)</pre>
+<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x117ee2190&gt;], dtype=object)</pre>
 </div>
 
 </div>
@@ -16972,7 +16978,7 @@ rAAAAABJRU5ErkJggg==
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">usersPerRegion</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[[</span><span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;region&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;region&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;users&#39;</span><span class="p">)</span>
@@ -16987,11 +16993,11 @@ rAAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[24]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x118fc5810&gt;], dtype=object)</pre>
+<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1188f6c10&gt;], dtype=object)</pre>
 </div>
 
 </div>
@@ -17662,7 +17668,7 @@ gg==
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">],</span><span class="n">infer_datetime_format</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="c1">#format=&quot;%y-%m-%d&quot;)</span>
@@ -17679,7 +17685,7 @@ gg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[61]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[25]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -17865,7 +17871,7 @@ gg==
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">newUsersPerDay</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
@@ -17879,11 +17885,11 @@ gg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[40]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[26]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11983add0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x103f5b750&gt;</pre>
 </div>
 
 </div>
@@ -18204,7 +18210,7 @@ Z4HeGGOCnAV6Y4wJchbojTEmyFmgN8aYIGeB3hhjgtz/AxTmv5Vd4AncAAAAAElFTkSuQmCC
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">devicesAndCategories</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[[</span><span class="s1">&#39;deviceCategory&#39;</span><span class="p">,</span> <span class="s1">&#39;operatingSystem&#39;</span><span class="p">,</span> <span class="s1">&#39;users&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;deviceCategory&#39;</span><span class="p">,</span> <span class="s1">&#39;operatingSystem&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -18219,11 +18225,11 @@ Z4HeGGOCnAV6Y4wJchbojTEmyFmgN8aYIGeB3hhjgtz/AxTmv5Vd4AncAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[62]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[27]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x119d1f750&gt;], dtype=object)</pre>
+<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1189fc0d0&gt;], dtype=object)</pre>
 </div>
 
 </div>
@@ -19457,7 +19463,7 @@ bQX915/HAAAAAElFTkSuQmCC
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">df2</span><span class="p">[[</span><span class="s1">&#39;deviceCategory&#39;</span><span class="p">,</span><span class="s1">&#39;users&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;deviceCategory&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">subplots</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -19471,11 +19477,11 @@ bQX915/HAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[63]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[28]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11b825e50&gt;], dtype=object)</pre>
+<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x119834150&gt;], dtype=object)</pre>
 </div>
 
 </div>
@@ -19954,7 +19960,7 @@ JEmSpCaziEmSJElSk1nEJEmSJKnJ/n9O4weCfHErtQAAAABJRU5ErkJggg==
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">desktopBrowserAndOS</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;deviceCategory&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;desktop&#39;</span><span class="p">])][[</span><span class="s1">&#39;browser&#39;</span><span class="p">,</span> <span class="s1">&#39;users&#39;</span><span class="p">,</span> <span class="s1">&#39;operatingSystem&#39;</span><span class="p">]]</span>
@@ -19969,11 +19975,11 @@ JEmSpCaziEmSJElSk1nEJEmSJKnJ/n9O4weCfHErtQAAAABJRU5ErkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[65]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11bb30b10&gt;], dtype=object)</pre>
+<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x119b48c90&gt;], dtype=object)</pre>
 </div>
 
 </div>
@@ -20449,7 +20455,7 @@ EZMkSZKkGvv/8JysgYXaBrIAAAAASUVORK5CYII=
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">desktopBrowserAndOS</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;operatingSystem&#39;</span><span class="p">,</span> <span class="s1">&#39;browser&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">subplots</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -20463,11 +20469,11 @@ EZMkSZKkGvv/8JysgYXaBrIAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[67]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[30]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c05a390&gt;], dtype=object)</pre>
+<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x118a121d0&gt;], dtype=object)</pre>
 </div>
 
 </div>
@@ -21806,7 +21812,7 @@ kcxQCBYREREREZHMUAgWERERERGRzPh/EsuoYjhJmpsAAAAASUVORK5CYII=
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">desktopBrowserAndOS</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;browser&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">subplots</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -21820,11 +21826,11 @@ kcxQCBYREREREZHMUAgWERERERGRzPh/EsuoYjhJmpsAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[68]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11ca321d0&gt;], dtype=object)</pre>
+<pre>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x119f843d0&gt;], dtype=object)</pre>
 </div>
 
 </div>
